@@ -1,5 +1,14 @@
 # KRPANO Downloader
 
+## Installation rapide
+
+```bash
+git clone https://github.com/CarlUpright/KRPano_DL.git
+cd KRPano_DL
+pip install -r requirements.txt
+python "KRPANO_downloader[CARL].py"
+```
+
 ## Description
 
 KRPANO Downloader est une application GUI Python qui permet de télécharger et convertir des panoramas 360° au format KRPano. L'application peut extraire des panoramas depuis des fichiers XML KRPano, télécharger automatiquement toutes les tuiles d'images, les assembler en faces de cube, et les convertir en projection équirectangulaire pour une utilisation dans d'autres applications.
@@ -18,43 +27,46 @@ KRPANO Downloader est une application GUI Python qui permet de télécharger et 
 ## Prérequis
 
 - Python 3.7 ou supérieur
+- Git (pour l'installation depuis GitHub)
 - Système d'exploitation : Windows, macOS, ou Linux
 
 ## Installation
 
-### 1. Cloner ou télécharger le script
+### Option 1 : Installation depuis GitHub (Recommandée)
 
-Téléchargez le fichier `KRPANO_downloader[CARL].py` sur votre ordinateur.
+```bash
+# Cloner le repository
+git clone https://github.com/CarlUpright/KRPano_DL.git
 
-### 2. Installer les dépendances
+# Se déplacer dans le dossier
+cd KRPano_DL
 
-Ouvrez un terminal/invite de commande et installez les packages Python requis :
+# Installer les dépendances
+pip install -r requirements.txt
+```
+
+### Option 2 : Téléchargement manuel
+
+1. Allez sur https://github.com/CarlUpright/KRPano_DL/
+2. Cliquez sur "Code" → "Download ZIP"
+3. Extraire le fichier ZIP sur votre ordinateur
+
+### Installation des dépendances (pour téléchargement manuel)
+
+Si vous n'avez pas de fichier `requirements.txt`, installez manuellement :
 
 ```bash
 pip install requests beautifulsoup4 numpy pillow opencv-python tqdm PyQt5 lxml
 ```
 
-Ou créez un fichier `requirements.txt` avec le contenu suivant :
-
-```
-requests>=2.25.0
-beautifulsoup4>=4.9.0
-numpy>=1.19.0
-Pillow>=8.0.0
-opencv-python>=4.5.0
-tqdm>=4.60.0
-PyQt5>=5.15.0
-lxml>=4.6.0
-```
-
-Puis installez avec :
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Lancer l'application
+## Lancement de l'application
 
 ```bash
+# Si installé depuis GitHub
+cd KRPano_DL
+python "KRPANO_downloader[CARL].py"
+
+# Ou directement si téléchargé manuellement
 python "KRPANO_downloader[CARL].py"
 ```
 
@@ -150,6 +162,13 @@ Dossier_de_sortie/
 - Nécessite que les fichiers XML soient accessibles publiquement
 - La conversion équirectangulaire peut être lente pour de très grandes résolutions
 - Certains sites peuvent avoir des protections anti-bot
+
+## Support
+
+Pour signaler un bug ou demander une fonctionnalité :
+1. Vérifiez d'abord la section "Résolution des problèmes"
+2. Notez l'URL qui pose problème et le message d'erreur exact
+3. Indiquez votre système d'exploitation et version de Python
 
 ## Licence
 
