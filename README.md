@@ -1,12 +1,16 @@
 # KRPANO Downloader
 
-## Installation rapide
+## Installation et lancement
 
 ```bash
-git clone https://github.com/CarlUpright/KRPano_DL.git
+git clone https://github.com/CarlUpright/KRPano_DL.git && cd KRPano_DL && pip install -r requirements.txt && python "KRPANO_downloader[CARL].py"
+```
+
+## Mise à jour
+
+```bash
 cd KRPano_DL
-pip install -r requirements.txt
-python "KRPANO_downloader[CARL].py"
+git pull
 ```
 
 ## Description
@@ -30,43 +34,10 @@ KRPANO Downloader est une application GUI Python qui permet de télécharger et 
 - Git (pour l'installation depuis GitHub)
 - Système d'exploitation : Windows, macOS, ou Linux
 
-## Installation
-
-### Option 1 : Installation depuis GitHub (Recommandée)
+## Relancer l'application
 
 ```bash
-# Cloner le repository
-git clone https://github.com/CarlUpright/KRPano_DL.git
-
-# Se déplacer dans le dossier
 cd KRPano_DL
-
-# Installer les dépendances
-pip install -r requirements.txt
-```
-
-### Option 2 : Téléchargement manuel
-
-1. Allez sur https://github.com/CarlUpright/KRPano_DL/
-2. Cliquez sur "Code" → "Download ZIP"
-3. Extraire le fichier ZIP sur votre ordinateur
-
-### Installation des dépendances (pour téléchargement manuel)
-
-Si vous n'avez pas de fichier `requirements.txt`, installez manuellement :
-
-```bash
-pip install requests beautifulsoup4 numpy pillow opencv-python tqdm PyQt5 lxml
-```
-
-## Lancement de l'application
-
-```bash
-# Si installé depuis GitHub
-cd KRPano_DL
-python "KRPANO_downloader[CARL].py"
-
-# Ou directement si téléchargé manuellement
 python "KRPANO_downloader[CARL].py"
 ```
 
